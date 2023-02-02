@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="JsonValidation TestSuite">
+        <classes>
+            <class name="com.validateJson.ValidateJsonUsingJayway">
+                <methods>
+                    <include name="validateForeignPlayersCount"/>
+                    <include name="validateWicketKeeperCount"/>
+                </methods>
+            </class>
+            <class name="com.validateJson.validateJsonUsingJsonSimple">
+                <methods>
+                    <include name="validateForeignPlayersCount"/>
+                    <include name="validateWicketKeeperCount"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
